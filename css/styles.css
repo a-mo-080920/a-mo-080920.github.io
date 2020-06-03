@@ -1,0 +1,89 @@
+.custom-main-color {
+  background-color: #e3f6f5;
+}
+
+.custom-sub-color1 {
+  background-color: #272343;
+}
+
+.custom-sub-color2 {
+  background-color: #bae8e8;
+}
+
+.custom-brand-logo {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 10%;
+}
+
+.custom-voice {
+  color: #444;
+  position: relative;
+  padding: 0.5rem;
+  border: 3px solid #bae8e8;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.custom-voice:before {
+  position: absolute;
+  content: "";
+  border: 10px solid transparent;
+  border-right: 10px solid #bae8e8;
+  top: 21px;
+  left: -23px;
+}
+
+.custom-voice:after {
+  position: absolute;
+  content: "";
+  border: 10px solid transparent;
+  border-right: 10px solid #bae8e8;
+  top: 21px;
+  left: -19px;
+}
+
+.custom-border {
+  border-radius: 50%;
+}
+
+.custom-back-to-top {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+}
+
+.custom-back-to-top > a {
+  color: #272343;
+  opacity: 0.3;
+}
+
+.custom-back-to-top > a:hover {
+  opacity: 1;
+}
+
+#choices > button.list-group-item-success::after {
+  content: " ... correct!";
+  font-weight: bold;
+}
+
+#choices > button.list-group-item-danger::after {
+  content: " ... wrong!";
+  font-weight: bold;
+}
+
+.custom-h {
+  height: 5rem;
+  overflow: auto;
+}
+
+.custom-ws {
+  white-space: pre-wrap;
+}
+
+.custom-scroll-list {
+  width: 14rem;
+  max-height: 18rem;
+  overflow: scroll;
+}

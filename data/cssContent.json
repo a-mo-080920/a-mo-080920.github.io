@@ -1,0 +1,209 @@
+[
+  {
+    "q": "position:relative;",
+    "c": [
+      "pos",
+      "p",
+      "pt"
+    ],
+    "e": "正解は、pos\npos:rでも同様の結果を得ることができます"
+  },
+  {
+    "q": "top:auto;",
+    "c": [
+      "t:a",
+      "ta",
+      "toa"
+    ],
+    "e": "正解は、t:a\nちなみにb:aとすることでbottom:auto;\nr:aとすることでright:auto;\nl:aとすることでleft:auto;になります"
+  },
+  {
+    "q": "z-index:auto;",
+    "c": [
+      "z:a",
+      "z",
+      "za"
+    ],
+    "e": "正解は、z:a"
+  },
+  {
+    "q": "cursor:pointer;",
+    "c": [
+      "cur:p",
+      "c:p",
+      "c"
+    ],
+    "e": "cur:p"
+  },
+  {
+    "q": "margin:auto;",
+    "c": [
+      "m:a",
+      "ma",
+      "m"
+    ],
+    "e": "正解は、m:a"
+  },
+  {
+    "q": "padding:;",
+    "c": [
+      "p",
+      "pa",
+      "pad"
+    ],
+    "e": "正解は、p"
+  },
+  {
+    "q": "box-sizing:border-box;",
+    "c": [
+      "bxz",
+      "box",
+      "bsbb"
+    ],
+    "e": "bxz\nbxz:bbとしても同様の結果を得ることができます"
+  },
+  {
+    "q": "width:;",
+    "c": [
+      "w",
+      "h",
+      "ww"
+    ],
+    "e": "正解は、w"
+  },
+  {
+    "q": "height:;",
+    "c": [
+      "h",
+      "w",
+      "hw"
+    ],
+    "e": "正解は、h"
+  },
+  {
+    "q": "max-width:;",
+    "c": [
+      "maw",
+      "m",
+      "miw"
+    ],
+    "e": "正解は、maw\nちなみに\nmahとすることでmax-height:;になります"
+  },
+  {
+    "q": "min-width:;",
+    "c": [
+      "miw",
+      "m",
+      "maw"
+    ],
+    "e": "正解は、miw\nちなみに\nmihとすることでmin-height:;になります"
+  },
+  {
+    "q": "font-weight:;",
+    "c": [
+      "fw",
+      "fs",
+      "f"
+    ],
+    "e": "正解は、fw\nちなみにfw:nとすることで\nfont-weight:normal;のように指定できます"
+  },
+  {
+    "q": "font-size:;",
+    "c": [
+      "fz",
+      "fs",
+      "fw"
+    ],
+    "e": "正解は、fz"
+  },
+  {
+    "q": "font-family:;",
+    "c": [
+      "ff",
+      "f",
+      "ft"
+    ],
+    "e": "正解は、ff\nちなみにff:sとすることで\nfont-family:serif;のように指定できます"
+  },
+  {
+    "q": "vertical-align:top;",
+    "c": [
+      "va",
+      "v",
+      "ve"
+    ],
+    "e": "正解は、va\nva:tでも同様の結果を得ることができます"
+  },
+  {
+    "q": "text-align:left;",
+    "c": [
+      "ta",
+      "tl",
+      "tea"
+    ],
+    "e": "正解は、ta\nta:lでも同様の結果を得ることができます"
+  },
+  {
+    "q": "text-decoration:none;",
+    "c": [
+      "td",
+      "te",
+      "ted"
+    ],
+    "e": "正解は、td\ntd:nでも同様の結果を得ることができます"
+  },
+  {
+    "q": "white-space:;",
+    "c": [
+      "whs",
+      "w",
+      "ws"
+    ],
+    "e": "正解は、whs\nちなみにwhs:pとすることで\nwhite-space:pre;のように指定できます"
+  },
+  {
+    "q": "background:#000;",
+    "c": [
+      "bg",
+      "ba",
+      "bag"
+    ],
+    "e": "正解は、bg"
+  },
+  {
+    "q": "border:;",
+    "c": [
+      "bd",
+      "b",
+      "bo"
+    ],
+    "e": "正解は、bd"
+  },
+  {
+    "q": "flex:;",
+    "c": [
+      "fx",
+      "fl",
+      "f"
+    ],
+    "e": "正解は、fx"
+  },
+  {
+    "q": "justify-content:;",
+    "c": [
+      "jc",
+      "j",
+      "ju"
+    ],
+    "e": "正解は、jc\nちなみにjc:cとすることで\njustify-content:center;のように指定できます"
+  },
+  {
+    "q": "transform:;",
+    "c": [
+      "trf",
+      "t",
+      "tr"
+    ],
+    "e": "正解は、trf\nちなみにtrf:rとすることで\ntransform: rotate(angle);のように指定できます"
+  }
+]

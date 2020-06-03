@@ -1,0 +1,182 @@
+[
+  {
+    "q": "<nav>\n\t<ul>\n\t\t<li>\n\t\t</li>\n\t</ul>\n</nav>",
+    "c": [
+      "nav>ul>li",
+      "nav+ul+li",
+      "nav+ul>li"
+    ],
+    "e": "正解は、nav>ul>li"
+  },
+  {
+    "q": "<div></div>\n<p></p>\n<blockquote></blockquote>",
+    "c": [
+      "div+p+bq",
+      "div>p>bq",
+      "div>p+bq"
+    ],
+    "e": "正解は、div+p+bq"
+  },
+  {
+    "q": "<ul>\n\t<li></li>\n\t<li></li>\n\t<li></li>\n</ul>",
+    "c": [
+      "ul>li*3",
+      "ul>li>li>li",
+      "ul>li+3"
+    ],
+    "e": "正解は、ul>li*3"
+  },
+  {
+    "q": "<ul>\n\t<li class=\"item1\"></li>\n\t<li class=\"item2\"></li>\n\t<li class=\"item3\"></li>\n</ul>",
+    "c": [
+      "ul>li.item$*3",
+      "ul+li.item$*3",
+      "ul>li.item$+3"
+    ],
+    "e": "正解は、ul>li.item$*3"
+  },
+  {
+    "q": "<ul>\n\t<li class=\"item001\"></li>\n\t<li class=\"item002\"></li>\n\t<li class=\"item003\"></li>\n</ul>",
+    "c": [
+      "ul>li.item$$$*3",
+      "ul>li.item$$*3",
+      "ul>li.item*3"
+    ],
+    "e": "正解は、ul>li.item$$$*3"
+  },
+  {
+    "q": "<div id=\"header\"></div>",
+    "c": [
+      "#header",
+      "div",
+      ".header"
+    ],
+    "e": "正解は、#header"
+  },
+  {
+    "q": "<div class=\"title\"></div>",
+    "c": [
+      ".title",
+      "#title",
+      "div"
+    ],
+    "e": "正解は、.title"
+  },
+  {
+    "q": "<a href=\"http:\/\/\"></a>",
+    "c": [
+      "a:link",
+      "a",
+      "a:l"
+    ],
+    "e": "正解は、a:link"
+  },
+  {
+    "q": "<link rel=\"stylesheet\" href=\"\" />",
+    "c": [
+      "link",
+      "style",
+      "ls"
+    ],
+    "e": "正解は、link"
+  },
+  {
+    "q": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<title>Document</title>\n</head>\n<body>\n\n</body>\n</html>",
+    "c": [
+      "!",
+      "!!!",
+      "#"
+    ],
+    "e": "正解は、!"
+  },
+  {
+    "q": "<div></div>\n<div>\n\t<p><span></span><em></em></p>\n\t<blockquote></blockquote>\n</div>",
+    "c": [
+      "div+div>p>span+em^bq",
+      "div+div>p>span+em+bq",
+      "div+div>p>span+em>bq"
+    ],
+    "e": "正解は、div+div>p>span+em^bq"
+  },
+  {
+    "q": "<p class=\"class1 class2 class3\"></p>",
+    "c": [
+      "p.class1.class2.class3",
+      "p.class*3",
+      "p.class$*3"
+    ],
+    "e": "正解は、p.class1.class2.class3"
+  },
+  {
+    "q": "<a href=\"\">Click me</a>",
+    "c": [
+      "a{Click me}",
+      "a",
+      "a(Click me)"
+    ],
+    "e": "正解は、a{Click me}"
+  },
+  {
+    "q": "<table>\n\t<tr class=\"row\">\n\t\t<td class=\"col\"></td>\n\t</tr>\n</table>\n",
+    "c": [
+      "table>.row>.col",
+      "table>.row+.col",
+      "table+.row>.col"
+    ],
+    "e": "正解は、table>.row>.col"
+  },
+  {
+    "q": "<a href=\"\"></a>",
+    "c": [
+      "a",
+      "link",
+      "ah"
+    ],
+    "e": "正解は、a"
+  },
+  {
+    "q": "<link rel=\"stylesheet\" href=\"style.css\" />",
+    "c": [
+      "link:css",
+      "link",
+      "li"
+    ],
+    "e": "正解は、link:css"
+  },
+  {
+    "q": "<script src=\"\"></script>",
+    "c": [
+      "script:src",
+      "script",
+      "s"
+    ],
+    "e": "正解は、script:src"
+  },
+  {
+    "q": "<ul>\n\t<li class=\"class\"></li>\n</ul>",
+    "c": [
+      "ul>.class",
+      "ul.class",
+      "ul>#class"
+    ],
+    "e": "正解は、ul>.class"
+  },
+  {
+    "q": "<input type=\"hidden\" name=\"\" />",
+    "c": [
+      "input:h",
+      "input",
+      "ih"
+    ],
+    "e": "正解は、input:h\ninput:hidden\nでも同様の結果を得ることができます"
+  },
+  {
+    "q": "<div>\n\t<header>\n\t\t<ul>\n\t\t\t<li><a href=\"\"></a></li>\n\t\t\t<li><a href=\"\"></a></li>\n\t\t</ul>\n\t</header>\n\t<footer>\n\t\t<p></p>\n\t</footer>\n</div>",
+    "c": [
+      "div>(header>ul>li*2>a)+footer>p",
+      "div>(header>ul>li*2>a)+footer+p",
+      "div+(header>ul>li*2>a)+footer>p"
+    ],
+    "e": "正解は、div>(header>ul>li*2>a)+footer>p"
+  }
+]
