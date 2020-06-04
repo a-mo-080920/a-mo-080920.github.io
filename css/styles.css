@@ -74,7 +74,7 @@
 }
 
 .custom-h {
-  height: 5rem;
+  min-height: 5rem;
   overflow: auto;
 }
 
@@ -87,3 +87,17 @@
   max-height: 18rem;
   overflow: scroll;
 }
+
+ /*バーの太さ*/
+.custom-scroll-bar::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+/*バーの背景色*/
+.custom-scroll-bar::-webkit-scrollbar-track {
+  background: #eee;
+} 
+/*バーの色*/
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+  background: #666;
+} 

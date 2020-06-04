@@ -77,6 +77,7 @@ $(function () {
     if (isCode) {
       $('#question').append('<pre><code></code></pre>');
       $('#question > pre > code').text(quizSet[currentNum].q);
+      $('#question > pre').addClass('custom-scroll-bar');
     } else {
       $('#question').text(quizSet[currentNum].q);
     }
