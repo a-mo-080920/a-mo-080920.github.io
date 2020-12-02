@@ -16,7 +16,7 @@
 
     .btn_star {
       -webkit-transition: all 0.3s ease-in;
-      background: url("./img/yumekawa_bird1_red.png") no-repeat center center;
+      background: url("./img/star01.png") no-repeat center center;
       background-size: auto 100%;
       height: 512px;
       transition: all 0.3s ease-in;
@@ -24,7 +24,20 @@
     }
 
     .btn_star.active {
-      background-image: url("./img/yumekawa_bird4_blue.png");
+      background-image: url("./img/star02.png");
+    }
+
+    .btn_nico {
+      -webkit-transition: all 0.3s ease-in;
+      background: url("../img/nico01.png") no-repeat center center;
+      background-size: auto 100%;
+      height: 500px;
+      transition: all 0.3s ease-in;
+      width: 850px;
+    }
+
+    .btn_nico.active {
+      background-image: url("../img/nico02.png");
     }
 
     @-webkit-keyframes ripple {
@@ -65,16 +78,24 @@
       }
     }
 
-    .picture-before {
-      background: url("./img/yumekawa_bird1_red.png") no-repeat center center;
-      height: 100px;
-      width: 100px;
+    .picture-before1 {
+      background: url("./img/star01.png") no-repeat center center;
+      display: none;
     }
 
-    .picture-after {
-      background: url("./img/yumekawa_bird4_blue.png") no-repeat center center;
-      height: 100px;
-      width: 100px;
+    .picture-after1 {
+      background: url("./img/star02.png") no-repeat center center;
+      display: none;
+    }
+
+    .picture-before2 {
+      background: url("./img/nico01.png") no-repeat center center;
+      display: none;
+    }
+
+    .picture-after2 {
+      background: url("./img/nico02.png") no-repeat center center;
+      display: none;
     }
   </style>
 </head>
@@ -83,13 +104,24 @@
   <div class="container">
     <div class="row">
       <div class="col double">
-        <button class="picture-before"></button>
-        <button class="picture-after"></button>
+        <button class="picture-before1"></button>
+        <button class="picture-after1"></button>
       </div>
     </div>
     <div class="row">
       <div class="col">
         <button class="button btn_star d-block mx-auto"></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col double">
+        <button class="picture-before2"></button>
+        <button class="picture-after2"></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="button btn_nico d-block mx-auto"></button>
       </div>
     </div>
   </div>
