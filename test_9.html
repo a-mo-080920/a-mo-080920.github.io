@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testsite</title>
+  <style>
+    /* CSSアニメーションの設定 */
+    @keyframes purun {
+      0% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+
+      15% {
+        transform: scale(0.9, 0.9) translate(0%, 5%);
+      }
+
+      30% {
+        transform: scale(1.3, 0.8) translate(0%, 10%);
+      }
+
+      50% {
+        transform: scale(0.8, 1.3) translate(0%, -10%);
+      }
+
+      70% {
+        transform: scale(1.1, 0.9) translate(0%, 5%);
+      }
+
+      100% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+    }
+
+    @keyframes korokoro {
+      0% {
+        transform: translate(0%, 0%);
+      }
+
+      5% {
+        transform: translate(10%, 0%) rotate(10deg);
+      }
+
+      25% {
+        transform: translate(20%, 0%) rotate(20deg);
+      }
+
+      30% {
+        transform: translate(-10%, 0%) rotate(-10deg);
+      }
+
+      35% {
+        transform: translate(-15%, 0%) rotate(-15deg);
+      }
+
+      45% {
+        transform: translate(10%, 0%) rotate(10deg);
+      }
+
+      50% {
+        transform: translate(15%, 0%) rotate(15deg);
+      }
+
+      60% {
+        transform: translate(-5%, 0%) rotate(-5deg);
+      }
+
+      65% {
+        transform: translate(-7%, 0%) rotate(-7deg);
+      }
+
+      75% {
+        transform: translate(0%, 0%) rotate(0deg);
+      }
+
+      100% {
+        transform: translate(0%, 0%) rotate(0deg);
+      }
+    }
+
+    @keyframes purupuru {
+      0% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+
+      20% {
+        transform: scale(1, 1.06) translate(-5%, -4%) skew(6deg, 0deg);
+      }
+
+      50% {
+        transform: scale(1, 0.94) translate(5%, 4%) skew(-6deg, 0deg);
+      }
+
+      65% {
+        transform: scale(1, 1.03) translate(2%, -2%) skew(-3deg, 0deg);
+      }
+
+      80% {
+        transform: scale(1, 0.97) translate(-2%, 2%) skew(3deg, 0deg);
+      }
+
+      100% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+    }
+
+    @keyframes poyon {
+      0% {
+        transform: scale(0.8, 1.4) translate(0%, -100%);
+      }
+
+      10% {
+        transform: scale(0.8, 1.4) translate(0%, -15%);
+      }
+
+      20% {
+        transform: scale(1.4, 0.6) translate(0%, 30%);
+      }
+
+      30% {
+        transform: scale(0.9, 1.1) translate(0%, -10%);
+      }
+
+      40% {
+        transform: scale(0.95, 1.2) translate(0%, -30%);
+      }
+
+      50% {
+        transform: scale(0.95, 1.2) translate(0%, -10%);
+      }
+
+      60% {
+        transform: scale(1.1, 0.9) translate(0%, 5%);
+      }
+
+      70% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+
+      100% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+    }
+
+    @keyframes poyooon {
+      0% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+
+      10% {
+        transform: scale(1.1, 0.9) translate(0%, 5%);
+      }
+
+      40% {
+        transform: scale(1.2, 0.8) translate(0%, 15%);
+      }
+
+      50% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+
+      60% {
+        transform: scale(0.9, 1.2) translate(0%, -100%);
+      }
+
+      75% {
+        transform: scale(0.9, 1.2) translate(0%, -20%);
+      }
+
+      85% {
+        transform: scale(1.2, 0.8) translate(0%, 15%);
+      }
+
+      100% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+    }
+
+    @keyframes puyon {
+      0% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+
+      40% {
+        transform: scale(0.95, 1.2) translate(0%, -10%);
+      }
+
+      50% {
+        transform: scale(1.1, 0.9) translate(0%, 5%);
+      }
+
+      60% {
+        transform: scale(0.95, 1.05) translate(0%, -3%);
+      }
+
+      70% {
+        transform: scale(1.05, 0.95) translate(0%, 3%);
+      }
+
+      80% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+
+      100% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+    }
+
+    @keyframes pururun {
+      0% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+
+      10% {
+        transform: scale(1, 1) translate(10%, 0%) skew(-10deg, 0deg);
+      }
+
+      60% {
+        transform: scale(1, 1) translate(20%, 0%) skew(-20deg, 0deg);
+      }
+
+      70% {
+        transform: scale(1, 1) translate(-15%, 0%) skew(15deg, 0deg);
+      }
+
+      80% {
+        transform: scale(1, 1) translate(15%, 0%) skew(-15deg, 0deg);
+      }
+
+      80% {
+        transform: scale(1, 1) translate(5%, 0%) skew(-5deg, 0deg);
+      }
+
+      90% {
+        transform: scale(1, 1) translate(-5%, 0%) skew(5deg, 0deg);
+      }
+
+      100% {
+        transform: scale(1, 1) translate(0%, 0%);
+      }
+    }
+
+    .button {
+      background-color: inherit;
+      border: inherit;
+      margin: 30px auto;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .btn_star {
+      background: url("../img/star01.png") no-repeat center center;
+      background-size: auto 100%;
+      height: 512px;
+      transition: all 0.3s ease-in;
+      width: 452px;
+      outline: 0 !important;
+    }
+
+    .btn_star.active {
+      background-image: url("../img/star02.png");
+    }
+
+    .btn_star::before {
+      content: "";
+      background: url("../img/star02.png");
+    }
+
+    .btn_nico {
+      background: url("../img/nico01.png") no-repeat center center;
+      background-size: auto 100%;
+      height: 500px;
+      transition: all 0.3s ease-in;
+      width: 850px;
+      outline: 0 !important;
+    }
+
+    .btn_nico.active {
+      background-image: url("../img/nico02.png");
+    }
+
+    .btn_nico::before {
+      content: "";
+      background: url("../img/nico02.png");
+    }
+
+    .btn_img_01 {
+      background: url("../img/btn_img_01_01.png") no-repeat center center;
+      background-size: auto 100%;
+      height: 500px;
+      transition: all 0.5s ease-in;
+      width: 850px;
+      outline: 0 !important;
+    }
+
+    .btn_img_01.active {
+      background-image: url("../img/btn_img_01_02.png");
+      animation: purun 0.8s linear 0s 1;
+      animation-name: purupuru;
+      animation-duration: 0.8s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+    }
+
+    .btn_img_01::before {
+      content: "";
+      background: url("../img/btn_img_01_02.png");
+    }
+
+    .btn_img_02 {
+      background: url("../img/btn_img_01_01.png") no-repeat center center;
+      background-size: auto 100%;
+      height: 500px;
+      transition: all 0.5s ease-in;
+      width: 850px;
+      outline: 0 !important;
+    }
+
+    .btn_img_02.active {
+      background-image: url("../img/btn_img_01_03.png");
+      animation: purun 0.8s linear 0s 1;
+      animation-name: poyon;
+      animation-duration: 0.8s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+    }
+
+    .btn_img_02::before {
+      content: "";
+      background: url("../img/btn_img_01_03.png");
+    }
+
+    @media screen and (max-width: 767px) {
+      .btn_star {
+        height: 105vw;
+      }
+
+      .btn_nico {
+        height: 50vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <button class="button btn_star d-block mx-auto"></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="button btn_nico d-block mx-auto"></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="button btn_img_01 d-block mx-auto"></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="button btn_img_02 d-block mx-auto"></button>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  <script src="./js/test.js"></script>
+</body>
+
+</html>
