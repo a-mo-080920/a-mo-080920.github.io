@@ -26,22 +26,13 @@
   border-radius: 20px;
 }
 
-.custom-voice:before {
-  position: absolute;
-  content: "";
-  border: 10px solid transparent;
-  border-right: 10px solid #bae8e8;
-  top: 21px;
-  left: -23px;
-}
-
 .custom-voice:after {
   position: absolute;
   content: "";
   border: 10px solid transparent;
   border-right: 10px solid #bae8e8;
   top: 21px;
-  left: -19px;
+  left: -20px;
 }
 
 .custom-border {
@@ -96,8 +87,15 @@
 /*バーの背景色*/
 .custom-scroll-bar::-webkit-scrollbar-track {
   background: #eee;
-} 
+}
 /*バーの色*/
 .custom-scroll-bar::-webkit-scrollbar-thumb {
   background: #666;
-} 
+}
+
+@media (max-width: 767.98px) {
+  .custom-voice:after {
+    display: none;
+  }
+}
+
